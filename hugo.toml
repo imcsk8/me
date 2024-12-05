@@ -1,0 +1,49 @@
+baseURL = 'https://ivan.chavero.com.mx/'
+languageCode = 'en-us'
+title = 'Iván Chavero :: Computer Tamer'
+theme = "nightfall"
+
+#[module]
+#[[module.imports]]
+#  path = 'github.com/LordMathis/hugo-theme-nightfall'
+
+[params]
+user = "imcsk8"
+hostname = "ivan.chavero.com.mx"
+
+  [params.author]
+    name = "Iván Chavero"
+    email = "ichavero@chavero.com.mx"
+
+
+[menu]
+  [[menu.header]]
+    name = "posts"
+    weight = 0
+    url = "/posts"
+
+[[params.social]]
+key = 1
+name = "github"
+url = "https://github.com/imcsk8"
+#icon = "fa-brands fa-github"  # Add link to your icon font to `layouts/partials/custom-head.html`
+#target = "_blank" # Defines your target option in a-href. _blank for a new Tab for example.
+#aria = "GitHub Profile" # Define the aria label for accessibility like page reader - this is better for your SEO
+
+[[params.social]]
+key = 2
+name = "X"
+url = "https://x.com/imcsk8"
+
+#[[params.social]]
+#key = 2
+#name = "mastodon"
+#url = "https://www.example.com"
+#rel = "me"  # You can also add rel to social link
+
+[[params.social]]
+key = 3
+name = "email"
+url = "mailto:ichavero@chavero.com.mx"
+
+
