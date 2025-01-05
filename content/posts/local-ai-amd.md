@@ -174,12 +174,12 @@ livecd ~ # umount /mnt/gentoo
 
 Mount filesystems
 ```bash
-livecd ~ # mount -o defaults,noatime,compress=lzo,autodefrag,subvol=root /dev/nvme0n1p4 /mnt/gentoo
+livecd ~ # mount -o defaults,compress=lzo,autodefrag,subvol=root /dev/nvme0n1p4 /mnt/gentoo
 livecd ~ # cd /mnt/gentoo
 livecd ~ # mkdir home root var boot srv
-livecd ~ # mount -o defaults,noatime,compress=lzo,autodefrag,subvol=home /dev/nvme0n1p4 /mnt/gentoo/home
-livecd ~ # mount -o defaults,noatime,compress=lzo,autodefrag,subvol=var /dev/nvme0n1p4 /mnt/gentoo/var
-livecd ~ # mount -o defaults,noatime,compress=lzo,autodefrag,subvol=srv /dev/nvme0n1p4 /mnt/gentoo/srv
+livecd ~ # mount -o defaults,compress=lzo,autodefrag,subvol=home /dev/nvme0n1p4 /mnt/gentoo/home
+livecd ~ # mount -o defaults,compress=lzo,autodefrag,subvol=var /dev/nvme0n1p4 /mnt/gentoo/var
+livecd ~ # mount -o defaults,compress=lzo,autodefrag,subvol=srv /dev/nvme0n1p4 /mnt/gentoo/srv
 livecd ~ # mount -o defaults,noatime /dev/nvme0n1p3 /mnt/gentoo/boot
 livecd ~ # mkdir /mnt/gentoo/boot/efi
 livecd ~ # mount -o defaults,noatime /dev/nvme0n1p1 /mnt/gentoo/boot/efi
@@ -218,10 +218,10 @@ livecd ~ # export PS1="(chroot) $PS1"
 (chroot) livecd ~ # cat << 'EOF' > /etc/fstab
 # <fs>      <mountpoint>    <type>  <opts>                                              <dump/pass>
 shm         /dev/shm        tmpfs   nodev,nosuid,noexec                                      0 0
-/dev/nvme0n1p4   /               btrfs   rw,noatime,compress=lzo,autodefrag,subvol=root      0 0
-/dev/nvme0n1p4   /home           btrfs   rw,noatime,compress=lzo,autodefrag,subvol=home      0 0
-/dev/nvme0n1p4   /srv            btrfs   rw,noatime,compress=lzo,autodefrag,subvol=srv       0 0
-/dev/nvme0n1p4   /var            btrfs   rw,noatime,compress=lzo,autodefrag,subvol=var       0 0
+/dev/nvme0n1p4   /               btrfs   rw,compress=lzo,autodefrag,subvol=root      0 0
+/dev/nvme0n1p4   /home           btrfs   rw,compress=lzo,autodefrag,subvol=home      0 0
+/dev/nvme0n1p4   /srv            btrfs   rw,compress=lzo,autodefrag,subvol=srv       0 0
+/dev/nvme0n1p4   /var            btrfs   rw,compress=lzo,autodefrag,subvol=var       0 0
 /dev/nvme0n1p2   none            swap    sw                                                  0 0
 /dev/nvme0n1p3   /boot           ext4    rw,noatime                                          0 0
 /dev/nvme0n1p1   /boot/efi       vfat    umask=0077                                          0 2
