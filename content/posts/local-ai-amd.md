@@ -33,7 +33,7 @@ with a full LLVM environment.
 
 ### Installation
 
-Downloaded the [Gentoo Minimal ISO](https://distfiles.gentoo.org/releases/amd64/autobuilds/20241222T164831Z/install-amd64-minimal-20241222T164831Z.iso) from the (Gentoo)[https://gentoo.org] webpage, also downloaded the [LLVM Stage3 with Systemd](https://distfiles.gentoo.org/releases/amd64/autobuilds/20241222T164831Z/stage3-amd64-llvm-systemd-20241222T164831Z.tar.xz) because I like Systemd.
+Downloaded the [Gentoo Minimal ISO](https://distfiles.gentoo.org/releases/amd64/autobuilds/20241222T164831Z/install-amd64-minimal-20241222T164831Z.iso) from the [Gentoo](https://gentoo.org) webpage, also downloaded the [LLVM Stage3 with Systemd](https://distfiles.gentoo.org/releases/amd64/autobuilds/20241222T164831Z/stage3-amd64-llvm-systemd-20241222T164831Z.tar.xz) because I like Systemd.
 
 1. **Save the ISO file to a USB Stick and boot the machine.**
 
