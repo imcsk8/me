@@ -4,7 +4,7 @@
     <title>Posts on Iván Chavero :: Computer Tamer</title>
     <link>https://ivan.chavero.com.mx/posts/</link>
     <description>Recent content in Posts on Iván Chavero :: Computer Tamer</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <managingEditor>ichavero@chavero.com.mx (Iván Chavero)</managingEditor>
     <webMaster>ichavero@chavero.com.mx (Iván Chavero)</webMaster>
@@ -29,7 +29,7 @@
       <link>https://ivan.chavero.com.mx/posts/rocket-tutorial/</link>
       <pubDate>Tue, 03 Dec 2024 23:34:12 -0600</pubDate><author>ichavero@chavero.com.mx (Iván Chavero)</author>
       <guid>https://ivan.chavero.com.mx/posts/rocket-tutorial/</guid>
-      <description>Tutorial de Rocket Introducción Creación de proyecto Creación de rutas Base de datos Request Guards Pruebas </description>
+      <description>Tutorial de Rocket Introducción Instalación de dependencias $ sudo dnf install -y libpq rust cargo make $ cargo install diesel_cli diesel_cli_ext https://github.com/imcsk8/examples&#xA;https://github.com/SotolitoLabs/TourMasters&#xA;Creación de proyecto $ cargo new posadev $ cd posadev $ cargo run Creación de Makefile El make nos sirve para llevar el control de los elementos que hemos compilado y para tener un flujo de trabajo para la compilación de la aplicación.&#xA;# Posadev run: cargo run clean: cargo clean Probamos ejecución</description>
     </item>
   </channel>
 </rss>
