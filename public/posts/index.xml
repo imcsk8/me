@@ -8,7 +8,28 @@
     <language>en-us</language>
     <managingEditor>ichavero@chavero.com.mx (Iván Chavero)</managingEditor>
     <webMaster>ichavero@chavero.com.mx (Iván Chavero)</webMaster>
-    <lastBuildDate></lastBuildDate>
+    <lastBuildDate>Wed, 01 Jan 2025 15:06:44 -0600</lastBuildDate>
     <atom:link href="https://ivan.chavero.com.mx/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Local AI Server From Scratch</title>
+      <link>https://ivan.chavero.com.mx/posts/local-ai-amd/</link>
+      <pubDate>Wed, 01 Jan 2025 15:06:44 -0600</pubDate><author>ichavero@chavero.com.mx (Iván Chavero)</author>
+      <guid>https://ivan.chavero.com.mx/posts/local-ai-amd/</guid>
+      <description>This article is a tutorial on how to build your own Artificial Intelligence server from scratch on an AMD machine with a Radeon GPU.</description>
+    </item>
+    <item>
+      <title>Local Whisper Amd</title>
+      <link>https://ivan.chavero.com.mx/posts/local-whisper-amd/</link>
+      <pubDate>Sun, 08 Dec 2024 22:54:54 -0600</pubDate><author>ichavero@chavero.com.mx (Iván Chavero)</author>
+      <guid>https://ivan.chavero.com.mx/posts/local-whisper-amd/</guid>
+      <description>Quick tutorial for text to speech using a local whisper instance</description>
+    </item>
+    <item>
+      <title>Tutorial de Rocket</title>
+      <link>https://ivan.chavero.com.mx/posts/rocket-tutorial/</link>
+      <pubDate>Tue, 03 Dec 2024 23:34:12 -0600</pubDate><author>ichavero@chavero.com.mx (Iván Chavero)</author>
+      <guid>https://ivan.chavero.com.mx/posts/rocket-tutorial/</guid>
+      <description>Tutorial de Rocket Introducción Creación de proyecto Creación de rutas Base de datos Request Guards Pruebas </description>
+    </item>
   </channel>
 </rss>
