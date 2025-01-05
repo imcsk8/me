@@ -2,6 +2,7 @@
 title = 'Tutorial de Rocket'
 date = 2024-12-03T23:34:12-06:00
 draft = false
+summary = "Tutorial rápido para aprender a usar Rocket, un framework para crear aplicaciones web en Rust"
 +++
 
 # Tutorial de Rocket
