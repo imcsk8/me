@@ -3,7 +3,7 @@ title = 'Local AI Server From Scratch'
 date = 2025-01-01T15:06:44-06:00
 description = "How I built my own local Artificial Intelligence server from scratch"
 summary = "This article is a tutorial on how to build your own Artificial Intelligence server from scratch on an AMD machine with a Radeon GPU."
-draft = true
+draft = false
 +++
 
 # Local AI Server from Scratch
@@ -618,6 +618,7 @@ imcsk8@soho ~$ ssh root@192.168.1.150
 ```
 
 2. Administration packages.
+TODO
 
 # References
 * https://wiki.gentoo.org/wiki/Handbook:AMD64/Full/Installation/en
