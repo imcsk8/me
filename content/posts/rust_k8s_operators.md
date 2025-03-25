@@ -51,14 +51,38 @@ $ cargo new --name rust-example-operator
 * Add `kube-rs` to the `Cargo.toml` file:
 
 ```bash
-
     cat << EOF >> Cargo.toml
 kube = { version = "0.99.0", features = ["runtime", "derive"] }
 k8s-openapi = { version = "0.24.0", features = ["latest"] }
+tokio = { version="1.44.1", features = [
+    "macros",
+    "rt-multi-thread",
+] } # Macros for easy project setup and testing, multi-threaded runtime for best utilization of resources
+thiserror = "2.0.12"
+anyhow = "1.0.97"
+log = "0.4.27"
+futures-util = "0.3.31"
+pretty_env_logger = "0.5.0"
 EOF
 ```
 
-* Create basic code to test the connection
+* Create the Makefile
+
+```
+run:
+	RUST_LOG=info cargo run
+
+test:
+	cargo test
+```
+
+*
+
+* Create basic code to test the connection to **minikube**
+
+```rust
+
+```
 
 * Define the API
 
