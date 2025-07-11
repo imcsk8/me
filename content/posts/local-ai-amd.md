@@ -496,6 +496,13 @@ Device Drivers  --->
                   (2048) Pre-allocated buffer size for HD-audio driver
 ```
 
+
+We have to add the amdgpu firmware for the MI100 and the internal Ryzen GPU
+TODO: This is a very big line, check how can this be in a better format
+```bash
+install_items+=" /lib/firmware/amdgpu/arcturus_asd.bin /lib/firmware/amdgpu/arcturus_gpu_info.bin /lib/firmware/amdgpu/arcturus_mec2.bin /lib/firmware/amdgpu/arcturus_mec.bin /lib/firmware/amdgpu/arcturus_rlc.bin /lib/firmware/amdgpu/arcturus_sdma.bin /lib/firmware/amdgpu/arcturus_smc.bin /lib/firmware/amdgpu/arcturus_sos.bin /lib/firmware/amdgpu/arcturus_ta.bin /lib/firmware/amdgpu/arcturus_vcn.bin /lib/firmware/amdgpu/psp_13_0_0_sos.bin /lib/firmware/amdgpu/psp_13_0_0_ta.bin /lib/firmware/amdgpu/psp_13_0_10_sos.bin /lib/firmware/amdgpu/psp_13_0_10_ta.bin /lib/firmware/amdgpu/psp_13_0_11_ta.bin /lib/firmware/amdgpu/psp_13_0_11_toc.bin /lib/firmware/amdgpu/psp_13_0_14_sos.bin /lib/firmware/amdgpu/psp_13_0_14_ta.bin /lib/firmware/amdgpu/psp_13_0_4_ta.bin /lib/firmware/amdgpu/psp_13_0_4_toc.bin /lib/firmware/amdgpu/psp_13_0_5_asd.bin /lib/firmware/amdgpu/psp_13_0_5_ta.bin /lib/firmware/amdgpu/psp_13_0_5_toc.bin /lib/firmware/amdgpu/psp_13_0_6_sos.bin /lib/firmware/amdgpu/psp_13_0_6_ta.bin /lib/firmware/amdgpu/psp_13_0_7_sos.bin /lib/firmware/amdgpu/psp_13_0_7_ta.bin /lib/firmware/amdgpu/psp_13_0_8_asd.bin /lib/firmware/amdgpu/psp_13_0_8_ta.bin /lib/firmware/amdgpu/psp_13_0_8_toc.bin /lib/firmware/amdgpu/psp_14_0_0_ta.bin /lib/firmware/amdgpu/psp_14_0_0_toc.bin /lib/firmware/amdgpu/psp_14_0_1_ta.bin /lib/firmware/amdgpu/psp_14_0_1_toc.bin /lib/firmware/amdgpu/psp_14_0_2_sos.bin /lib/firmware/amdgpu/psp_14_0_2_ta.bin /lib/firmware/amdgpu/psp_14_0_3_sos.bin /lib/firmware/amdgpu/psp_14_0_3_ta.bin /lib/firmware/amdgpu/psp_14_0_4_ta.bin /lib/firmware/amdgpu/psp_14_0_4_toc.bin /lib/firmware/amdgpu/dcn_3_1_4_dmcub.bin /lib/firmware/amdgpu/dcn_3_1_5_dmcub.bin /lib/firmware/amdgpu/dcn_3_1_6_dmcub.bin /lib/firmware/amdgpu/dcn_3_2_0_dmcub.bin /lib/firmware/amdgpu/dcn_3_2_1_dmcub.bin /lib/firmware/amdgpu/dcn_3_5_1_dmcub.bin /lib/firmware/amdgpu/dcn_3_5_dmcub.bin /lib/firmware/amdgpu/dcn_4_0_1_dmcub.bin /lib/firmware/amdgpu/gc_10_3_6_ce.bin /lib/firmware/amdgpu/gc_10_3_6_me.bin /lib/firmware/amdgpu/gc_10_3_6_mec2.bin /lib/firmware/amdgpu/gc_10_3_6_mec.bin /lib/firmware/amdgpu/gc_10_3_6_pfp.bin /lib/firmware/amdgpu/gc_10_3_6_rlc.bin /lib/firmware/amdgpu/gc_10_3_7_ce.bin /lib/firmware/amdgpu/gc_10_3_7_me.bin /lib/firmware/amdgpu/gc_10_3_7_mec2.bin /lib/firmware/amdgpu/gc_10_3_7_mec.bin /lib/firmware/amdgpu/gc_10_3_7_pfp.bin /lib/firmware/amdgpu/gc_10_3_7_rlc.bin /lib/firmware/amdgpu/gc_11_0_0_imu.bin /lib/firmware/amdgpu/gc_11_0_0_me.bin /lib/firmware/amdgpu/gc_11_0_0_mec.bin /lib/firmware/amdgpu/gc_11_0_0_mes1.bin /lib/firmware/amdgpu/gc_11_0_0_mes_2.bin /lib/firmware/amdgpu/gc_11_0_0_mes.bin /lib/firmware/amdgpu/gc_11_0_0_pfp.bin /lib/firmware/amdgpu/gc_11_0_0_rlc_1.bin /lib/firmware/amdgpu/gc_11_0_0_rlc.bin /lib/firmware/amdgpu/gc_11_0_1_imu.bin /lib/firmware/amdgpu/gc_11_0_1_me.bin /lib/firmware/amdgpu/gc_11_0_1_mec.bin /lib/firmware/amdgpu/gc_11_0_1_mes1.bin /lib/firmware/amdgpu/gc_11_0_1_mes_2.bin /lib/firmware/amdgpu/gc_11_0_1_mes.bin /lib/firmware/amdgpu/gc_11_0_1_pfp.bin /lib/firmware/amdgpu/gc_11_0_1_rlc.bin /lib/firmware/amdgpu/gc_11_0_2_imu.bin /lib/firmware/amdgpu/gc_11_0_2_me.bin /lib/firmware/amdgpu/gc_11_0_2_mec.bin /lib/firmware/amdgpu/gc_11_0_2_mes1.bin /lib/firmware/amdgpu/gc_11_0_2_mes_2.bin /lib/firmware/amdgpu/gc_11_0_2_mes.bin /lib/firmware/amdgpu/gc_11_0_2_pfp.bin /lib/firmware/amdgpu/gc_11_0_2_rlc.bin /lib/firmware/amdgpu/gc_11_0_3_imu.bin /lib/firmware/amdgpu/gc_11_0_3_me.bin /lib/firmware/amdgpu/gc_11_0_3_mec.bin /lib/firmware/amdgpu/gc_11_0_3_mes1.bin /lib/firmware/amdgpu/gc_11_0_3_mes_2.bin /lib/firmware/amdgpu/gc_11_0_3_pfp.bin /lib/firmware/amdgpu/gc_11_0_3_rlc.bin /lib/firmware/amdgpu/gc_11_0_4_imu.bin /lib/firmware/amdgpu/gc_11_0_4_me.bin /lib/firmware/amdgpu/gc_11_0_4_mec.bin /lib/firmware/amdgpu/gc_11_0_4_mes1.bin /lib/firmware/amdgpu/gc_11_0_4_mes_2.bin /lib/firmware/amdgpu/gc_11_0_4_mes.bin /lib/firmware/amdgpu/gc_11_0_4_pfp.bin /lib/firmware/amdgpu/gc_11_0_4_rlc.bin /lib/firmware/amdgpu/gc_11_5_0_imu.bin /lib/firmware/amdgpu/gc_11_5_0_me.bin /lib/firmware/amdgpu/gc_11_5_0_mec.bin /lib/firmware/amdgpu/gc_11_5_0_mes1.bin /lib/firmware/amdgpu/gc_11_5_0_mes_2.bin /lib/firmware/amdgpu/gc_11_5_0_pfp.bin /lib/firmware/amdgpu/gc_11_5_0_rlc.bin /lib/firmware/amdgpu/gc_11_5_1_imu.bin /lib/firmware/amdgpu/gc_11_5_1_me.bin /lib/firmware/amdgpu/gc_11_5_1_mec.bin /lib/firmware/amdgpu/gc_11_5_1_mes1.bin /lib/firmware/amdgpu/gc_11_5_1_mes_2.bin /lib/firmware/amdgpu/gc_11_5_1_pfp.bin /lib/firmware/amdgpu/gc_11_5_1_rlc.bin /lib/firmware/amdgpu/gc_11_5_2_imu.bin /lib/firmware/amdgpu/gc_11_5_2_me.bin /lib/firmware/amdgpu/gc_11_5_2_mec.bin /lib/firmware/amdgpu/gc_11_5_2_mes1.bin /lib/firmware/amdgpu/gc_11_5_2_mes_2.bin /lib/firmware/amdgpu/gc_11_5_2_pfp.bin /lib/firmware/amdgpu/gc_11_5_2_rlc.bin /lib/firmware/amdgpu/gc_12_0_0_imu.bin /lib/firmware/amdgpu/gc_12_0_0_me.bin /lib/firmware/amdgpu/gc_12_0_0_mec.bin /lib/firmware/amdgpu/gc_12_0_0_mes1.bin /lib/firmware/amdgpu/gc_12_0_0_mes.bin /lib/firmware/amdgpu/gc_12_0_0_pfp.bin /lib/firmware/amdgpu/gc_12_0_0_rlc.bin /lib/firmware/amdgpu/gc_12_0_0_toc.bin /lib/firmware/amdgpu/gc_12_0_0_uni_mes.bin /lib/firmware/amdgpu/gc_12_0_1_imu.bin /lib/firmware/amdgpu/gc_12_0_1_me.bin /lib/firmware/amdgpu/gc_12_0_1_mec.bin /lib/firmware/amdgpu/gc_12_0_1_mes1.bin /lib/firmware/amdgpu/gc_12_0_1_mes.bin /lib/firmware/amdgpu/gc_12_0_1_pfp.bin /lib/firmware/amdgpu/gc_12_0_1_rlc.bin /lib/firmware/amdgpu/gc_12_0_1_toc.bin /lib/firmware/amdgpu/gc_12_0_1_uni_mes.bin /lib/firmware/amdgpu/gc_9_4_3_mec.bin /lib/firmware/amdgpu/gc_9_4_3_rlc.bin /lib/firmware/amdgpu/gc_9_4_3_sjt_mec.bin /lib/firmware/amdgpu/gc_9_4_4_mec.bin /lib/firmware/amdgpu/gc_9_4_4_rlc.bin /lib/firmware/amdgpu/gc_9_4_4_sjt_mec.bin /lib/firmware/amdgpu/sdma_4_4_2.bin /lib/firmware/amdgpu/sdma_4_4_5.bin /lib/firmware/amdgpu/sdma_5_2_6.bin /lib/firmware/amdgpu/sdma_5_2_7.bin /lib/firmware/amdgpu/sdma_6_0_0.bin /lib/firmware/amdgpu/sdma_6_0_1.bin /lib/firmware/amdgpu/sdma_6_0_2.bin /lib/firmware/amdgpu/sdma_6_0_3.bin /lib/firmware/amdgpu/sdma_6_1_0.bin /lib/firmware/amdgpu/sdma_6_1_1.bin /lib/firmware/amdgpu/sdma_6_1_2.bin /lib/firmware/amdgpu/sdma_7_0_0.bin /lib/firmware/amdgpu/sdma_7_0_1.bin /lib/firmware/amdgpu/vcn_3_1_2.bin /lib/firmware/amdgpu/vcn_4_0_0.bin /lib/firmware/amdgpu/vcn_4_0_2.bin /lib/firmware/amdgpu/vcn_4_0_3.bin /lib/firmware/amdgpu/vcn_4_0_4.bin /lib/firmware/amdgpu/vcn_4_0_5.bin /lib/firmware/amdgpu/vcn_4_0_6_1.bin /lib/firmware/amdgpu/vcn_4_0_6.bin /lib/firmware/amdgpu/vcn_5_0_0.bin "
+```
+
 Enable systemd sypport on the kernel:
 
 ```
@@ -577,6 +584,13 @@ Ensure that EFI is enabled:
 (chroot) livecd ~ # echo 'GRUB_PLATFORMS="efi-64"' >> /etc/portage/make.conf
 ```
 
+Set grub theme in /etc/default/grub:
+
+```
+GRUB_THEME="/boot/grub/themes/starfield/theme.txt"
+```
+
+
 Install grub:
 ```bash
 (chroot) livecd ~ # emerge --ask sys-boot/grub
@@ -617,7 +631,28 @@ sotolito@sohoai1 ~ $ exit
 imcsk8@soho ~$ ssh root@192.168.1.150
 ```
 
-2. Administration packages.
+2. Administration utilities
+
+```bash
+(chroot) livecd ~ # emerge --autounmask-write sys-power/power-profiles-daemon
+```
+
+3. Install ollama
+
+Ollama installer downloads the proper tools for the ROCm platform.
+
+* Download the installer:
+
+```bash
+sohoai1 ~ # curl -fsSL https://ollama.com/install.sh > ollama_install.sh
+```
+
+Verify the installer script contents (don't just run shell scripts blindly from the internet)
+
+```bash
+sohoai1 ~ # bash ollama_install.sh
+```
+
 TODO
 
 # References
