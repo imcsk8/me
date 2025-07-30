@@ -4,12 +4,19 @@
     <title>Posts on Iván Chavero :: Computer Tamer</title>
     <link>https://ivan.chavero.com.mx/posts/</link>
     <description>Recent content in Posts on Iván Chavero :: Computer Tamer</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <managingEditor>ichavero@chavero.com.mx (Iván Chavero)</managingEditor>
     <webMaster>ichavero@chavero.com.mx (Iván Chavero)</webMaster>
-    <lastBuildDate>Wed, 01 Jan 2025 15:06:44 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 08 Jul 2025 14:18:44 -0600</lastBuildDate>
     <atom:link href="https://ivan.chavero.com.mx/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cosmic Desktop</title>
+      <link>https://ivan.chavero.com.mx/posts/cosmic-desktop/</link>
+      <pubDate>Tue, 08 Jul 2025 14:18:44 -0600</pubDate><author>ichavero@chavero.com.mx (Iván Chavero)</author>
+      <guid>https://ivan.chavero.com.mx/posts/cosmic-desktop/</guid>
+      <description>Small tutorial on how to install COSMIC desktop on Fedora distributions</description>
+    </item>
     <item>
       <title>Local AI Server From Scratch</title>
       <link>https://ivan.chavero.com.mx/posts/local-ai-amd/</link>
@@ -29,7 +36,7 @@
       <link>https://ivan.chavero.com.mx/posts/rocket-tutorial/</link>
       <pubDate>Tue, 03 Dec 2024 23:34:12 -0600</pubDate><author>ichavero@chavero.com.mx (Iván Chavero)</author>
       <guid>https://ivan.chavero.com.mx/posts/rocket-tutorial/</guid>
-      <description>Tutorial de Rocket Introducción Instalación de dependencias $ sudo dnf install -y libpq rust cargo make $ cargo install diesel_cli diesel_cli_ext https://github.com/imcsk8/examples&#xA;https://github.com/SotolitoLabs/TourMasters&#xA;Creación de proyecto $ cargo new posadev $ cd posadev $ cargo run Creación de Makefile El make nos sirve para llevar el control de los elementos que hemos compilado y para tener un flujo de trabajo para la compilación de la aplicación.&#xA;# Posadev run: cargo run clean: cargo clean Probamos ejecución</description>
+      <description>Tutorial rápido para aprender a usar Rocket, un framework para crear aplicaciones web en Rust</description>
     </item>
   </channel>
 </rss>
