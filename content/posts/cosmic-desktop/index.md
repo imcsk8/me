@@ -3,10 +3,10 @@ title = 'Cosmic Desktop'
 description = "Installing COSMIC desktop on Fedora 42"
 summary = "Small tutorial on how to install COSMIC desktop on Fedora distributions"
 date = 2025-07-08T14:18:44-06:00
-draft = true
+draft = false
 +++
 
-# Installing COSMIC desktop on Fedora 42
+# Installing COSMIC on Fedora 42
 
 COSMIC is a desktop environment created in Rust from the ground up. Cosmic is written for the wayland
 protocol so there is no legacy code floating around like in gnome. Some of the features that caught my eye
@@ -47,6 +47,12 @@ the correct language.
 
 There are some stuff that still feels a little rough like: missing like image previews in file selectors, the screen capture 
 application does not record video and some icons look a little pixelated in the Dock.
+
+- Can't copy paste from vim (the mouse=a worked too well)
+- If I disable hibernate the sceen does not auto lock.
+- After unlocking the screen everything is unstable: missing workspaces the dock does no autohide
+- I had to kill -HUP cosmic-workspaces
+- terminal can't move tabs, changed to ptyxis
 
 ## Conclusion
 
