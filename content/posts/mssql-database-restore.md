@@ -14,7 +14,7 @@ an SQL Server instance.
 
 ## Start SQL server container
 
-To avoid installation dependencies use the SQL Server container image
+Use the SQL Server container image to avoid installing it system wide.
 
 ```bash
 user@host ~$ podman run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=$PASSWORD" \
@@ -41,23 +41,23 @@ user@host ~$ podman exec -it sql1 /opt/mssql-tools18/bin/sqlcmd -No -S localhost
 To avoid problems with the file paths use the `MOVE` option.
 
 ```sql
-RESTORE DATABASE gourmet FROM DISK = N'/files/Gourmet.bak'
+RESTORE DATABASE gourmet FROM DISK = N'/files/my_sql_backup.bak'
     WITH FILE = 1,
     NOUNLOAD,
     REPLACE,
     NORECOVERY,
     STATS = 5
-    MOVE N'gourmet' TO N'/var/opt/mssql/data/gourmet.mdf'
-    MOVE N'gourmet_log' TO N'/var/opt/mssql/data/gourmet_log.LDF';
+    MOVE N'gourmet' TO N'/var/opt/mssql/data/imcsk8.mdf'
+    MOVE N'gourmet_log' TO N'/var/opt/mssql/data/imcsk8_log.LDF';
 ```
 
 ```sql
-RESTORE DATABASE gourmet WITH RECOVERY;
+RESTORE DATABASE imcsk8 WITH RECOVERY;
 ```
 
 Enter the database
 ```sql
-USE gourmet;
+USE imcsk8;
 GO
 ```
 
@@ -68,3 +68,6 @@ select name from sys.Tables;
 GO
 ```
 
+# References
+* https://learn.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-ver17&tabs=cli&pivots=cs1-bash
+* https://learn.microsoft.com/es-es/sql/linux/sql-server-linux-backup-and-restore-database?view=sql-server-ver17
