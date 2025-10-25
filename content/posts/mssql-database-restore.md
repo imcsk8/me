@@ -1,7 +1,7 @@
 +++
 title = 'Mssql Database Restore'
 date = 2025-10-19T17:12:58-06:00
-draft = true
+draft = false
 description = 'Restore a MSSQL database from a bak file'
 summary = 'Restore a MSSQL database from a backup file'
 +++
