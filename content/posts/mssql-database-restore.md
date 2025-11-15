@@ -46,13 +46,19 @@ RESTORE DATABASE gourmet FROM DISK = N'/files/my_sql_backup.bak'
     NOUNLOAD,
     REPLACE,
     NORECOVERY,
-    STATS = 5
-    MOVE N'gourmet' TO N'/var/opt/mssql/data/imcsk8.mdf'
+    STATS = 5,
+    MOVE N'gourmet' TO N'/var/opt/mssql/data/imcsk8.mdf',
     MOVE N'gourmet_log' TO N'/var/opt/mssql/data/imcsk8_log.LDF';
 ```
 
 ```sql
 RESTORE DATABASE imcsk8 WITH RECOVERY;
+```
+
+Set the database compatibility level to the latest (currently is 170).
+
+```sql
+ALTER DATABASE imcsk8 SET COMPATIBILITY_LEVEL=170;
 ```
 
 Enter the database
