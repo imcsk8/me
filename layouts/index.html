@@ -1,0 +1,123 @@
+{{ define "main" }}
+<style>
+
+  .content {
+    padding-left: 5% !important;
+    display: block !important;
+  }
+  /* Reset theme container limits specifically for this layout */
+  .container {
+    max-width: 95% !important;
+    margin: 0 !important;
+    padding-left: 20px !important;
+  }
+
+  /* Structural side-by-side view pushed to the left edge */
+  .homepage-grid {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    text-align: left;
+    margin-top: 35px;
+  }
+
+  /* Left Sidebar Styling */
+  .sidebar-list {
+    flex: 0 0 250px; 
+    text-align: left;
+    border-right: 1px solid var(--border-color, #444);
+    padding-right: 20px;
+  }
+
+  .sidebar-list h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    border-bottom: 2px solid var(--accent-color, #ff79c6);
+    padding-bottom: 8px;
+  }
+
+  .sidebar-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sidebar-list li {
+    margin-bottom: 12px;
+    font-size: 0.95rem;
+  }
+
+  .sidebar-list a {
+    text-decoration: none;
+    transition: opacity 0.2s;
+  }
+
+  /* Right Main Content Styling */
+  .main-article {
+    flex: 1; 
+    text-align: left;
+    max-width: 900px; /* Limits reading lines so text isn't infinitely long on large monitors */
+  }
+
+  .main-article .post-title {
+    margin-top: 0;
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      max-width: 100% !important;
+      padding: 0 15px !important;
+    }
+    .homepage-grid {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+    .sidebar-list {
+      flex: none;
+      border-right: none;
+      border-bottom: 1px solid var(--border-color, #444);
+      padding-bottom: 20px;
+    }
+  }
+</style>
+
+<div class="homepage-grid">
+  <!-- LEFT SIDEBAR: Article List -->
+  <aside class="sidebar-list">
+    <h3>Latest Articles</h3>
+    <ul>
+      {{ range (where site.RegularPages "Type" "posts") }}
+        <li>
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </li>
+      {{ else }}
+        <li>No articles found.</li>
+      {{ end }}
+    </ul>
+  </aside>
+
+  <!-- RIGHT MAIN CONTENT: Full Text of Latest Article -->
+  <main class="main-article">
+    {{ $latestPost := first 1 (where site.RegularPages "Type" "posts").ByDate.Reverse }}
+
+    {{ range $latestPost }}
+      <article class="post">
+        <h1 class="post-title">
+          <a href="{{ .Permalink }}">{{ .Title }}</a>
+        </h1>
+
+        <div class="post-meta">
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+        </div>
+
+        <div class="post-content">
+          {{ .Content }}
+        </div>
+      </article>
+    {{ else }}
+      <p>No content available.</p>
+    {{ end }}
+  </main>
+</div>
+{{ end }}
+
