@@ -2,34 +2,111 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Iván Chavero :: Computer Tamer</title>
-    <link>https://ivan.chavero.com.mx/</link>
+    <link>http://192.168.1.178:1313/</link>
     <description>Recent content on Iván Chavero :: Computer Tamer</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <managingEditor>ichavero@chavero.com.mx (Iván Chavero)</managingEditor>
-    <webMaster>ichavero@chavero.com.mx (Iván Chavero)</webMaster>
-    <lastBuildDate>Wed, 01 Jan 2025 15:06:44 -0600</lastBuildDate>
-    <atom:link href="https://ivan.chavero.com.mx/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>&amp;#105;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#64;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#46;&amp;#109;&amp;#120; (Iván Chavero)</managingEditor>
+    <webMaster>&amp;#105;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#64;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#46;&amp;#109;&amp;#120; (Iván Chavero)</webMaster>
+    <lastBuildDate>Sat, 27 Jun 2026 08:31:19 -0600</lastBuildDate>
+    <atom:link href="http://192.168.1.178:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Security Sucks: Gopass on Multiple Machines</title>
+      <link>http://192.168.1.178:1313/posts/gopass/</link>
+      <pubDate>Sat, 27 Jun 2026 08:31:19 -0600</pubDate><author>&amp;#105;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#64;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#46;&amp;#109;&amp;#120; (Iván Chavero)</author>
+      <guid>http://192.168.1.178:1313/posts/gopass/</guid>
+      <description>Part of my Security Sucks series: Step by step guide to implement Gopass on multiple boxes</description>
+    </item>
+    <item>
+      <title>Llamafiles</title>
+      <link>http://192.168.1.178:1313/posts/llamafiles/</link>
+      <pubDate>Tue, 31 Mar 2026 20:47:14 -0600</pubDate><author>&amp;#105;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#64;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#46;&amp;#109;&amp;#120; (Iván Chavero)</author>
+      <guid>http://192.168.1.178:1313/posts/llamafiles/</guid>
+      <description>Llamafiles</description>
+    </item>
+    <item>
+      <title>Systemd Kata</title>
+      <link>http://192.168.1.178:1313/posts/systemd-kata/</link>
+      <pubDate>Fri, 27 Mar 2026 23:02:53 -0600</pubDate><author>&amp;#105;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#64;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#46;&amp;#109;&amp;#120; (Iván Chavero)</author>
+      <guid>http://192.168.1.178:1313/posts/systemd-kata/</guid>
+      <description>Systemd Kata</description>
+    </item>
+    <item>
+      <title>Odoo Customization</title>
+      <link>http://192.168.1.178:1313/posts/odoo-customization/</link>
+      <pubDate>Sat, 08 Nov 2025 09:41:54 -0600</pubDate><author>&amp;#105;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#64;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#46;&amp;#109;&amp;#120; (Iván Chavero)</author>
+      <guid>http://192.168.1.178:1313/posts/odoo-customization/</guid>
+      <description>Odoo Customization</description>
+    </item>
+    <item>
+      <title>Mssql Database Restore</title>
+      <link>http://192.168.1.178:1313/posts/mssql-database-restore/</link>
+      <pubDate>Sun, 19 Oct 2025 17:12:58 -0600</pubDate><author>&amp;#105;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#64;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#46;&amp;#109;&amp;#120; (Iván Chavero)</author>
+      <guid>http://192.168.1.178:1313/posts/mssql-database-restore/</guid>
+      <description>Restore a MSSQL database from a backup file</description>
+    </item>
+    <item>
+      <title>Openldap to Freeipa Migration</title>
+      <link>http://192.168.1.178:1313/posts/openldap-freeipa-migration/</link>
+      <pubDate>Fri, 10 Oct 2025 20:21:17 -0600</pubDate><author>&amp;#105;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#64;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#46;&amp;#109;&amp;#120; (Iván Chavero)</author>
+      <guid>http://192.168.1.178:1313/posts/openldap-freeipa-migration/</guid>
+      <description>This article is a step by step guide for migrating OpenLDAP to FreeIPA</description>
+    </item>
+    <item>
+      <title>Minimal Distro From Scratch</title>
+      <link>http://192.168.1.178:1313/posts/minimal-distro-from-scratch/</link>
+      <pubDate>Tue, 29 Jul 2025 18:45:37 -0600</pubDate><author>&amp;#105;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#64;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#46;&amp;#109;&amp;#120; (Iván Chavero)</author>
+      <guid>http://192.168.1.178:1313/posts/minimal-distro-from-scratch/</guid>
+      <description>This article is a tutorial on how to build your minimal Linux distribution from scratch using Buildroot</description>
+    </item>
+    <item>
+      <title>Cosmic Desktop</title>
+      <link>http://192.168.1.178:1313/posts/cosmic-desktop/</link>
+      <pubDate>Tue, 08 Jul 2025 14:18:44 -0600</pubDate><author>&amp;#105;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#64;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#46;&amp;#109;&amp;#120; (Iván Chavero)</author>
+      <guid>http://192.168.1.178:1313/posts/cosmic-desktop/</guid>
+      <description>Small tutorial on how to install COSMIC desktop on Fedora distributions</description>
+    </item>
+    <item>
+      <title>RPM Distribution Build System</title>
+      <link>http://192.168.1.178:1313/posts/mxos-build/</link>
+      <pubDate>Wed, 11 Jun 2025 14:11:15 -0600</pubDate><author>&amp;#105;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#64;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#46;&amp;#109;&amp;#120; (Iván Chavero)</author>
+      <guid>http://192.168.1.178:1313/posts/mxos-build/</guid>
+      <description>How to build an Operating System from CentOS Stream Sources.</description>
+    </item>
+    <item>
+      <title>Kubernetes Operators in Rust</title>
+      <link>http://192.168.1.178:1313/posts/rust_k8s_operators/</link>
+      <pubDate>Sat, 22 Mar 2025 15:13:50 -0600</pubDate><author>&amp;#105;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#64;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#46;&amp;#109;&amp;#120; (Iván Chavero)</author>
+      <guid>http://192.168.1.178:1313/posts/rust_k8s_operators/</guid>
+      <description>Small tutorial for creating Kubernetes Operators in Rust</description>
+    </item>
+    <item>
+      <title>Cadena Suministro de Software</title>
+      <link>http://192.168.1.178:1313/posts/cadena-suministro-sw/</link>
+      <pubDate>Mon, 03 Mar 2025 12:34:11 -0600</pubDate><author>&amp;#105;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#64;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#46;&amp;#109;&amp;#120; (Iván Chavero)</author>
+      <guid>http://192.168.1.178:1313/posts/cadena-suministro-sw/</guid>
+      <description>Este artículo aborda la importancia de la cadena de suministro de software</description>
+    </item>
     <item>
       <title>Local AI Server From Scratch</title>
-      <link>https://ivan.chavero.com.mx/posts/local-ai-amd/</link>
-      <pubDate>Wed, 01 Jan 2025 15:06:44 -0600</pubDate><author>ichavero@chavero.com.mx (Iván Chavero)</author>
-      <guid>https://ivan.chavero.com.mx/posts/local-ai-amd/</guid>
+      <link>http://192.168.1.178:1313/posts/local-ai-amd/</link>
+      <pubDate>Wed, 01 Jan 2025 15:06:44 -0600</pubDate><author>&amp;#105;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#64;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#46;&amp;#109;&amp;#120; (Iván Chavero)</author>
+      <guid>http://192.168.1.178:1313/posts/local-ai-amd/</guid>
       <description>This article is a tutorial on how to build your own Artificial Intelligence server from scratch on an AMD machine with a Radeon GPU.</description>
     </item>
     <item>
       <title>Local Whisper Amd</title>
-      <link>https://ivan.chavero.com.mx/posts/local-whisper-amd/</link>
-      <pubDate>Sun, 08 Dec 2024 22:54:54 -0600</pubDate><author>ichavero@chavero.com.mx (Iván Chavero)</author>
-      <guid>https://ivan.chavero.com.mx/posts/local-whisper-amd/</guid>
+      <link>http://192.168.1.178:1313/posts/local-whisper-amd/</link>
+      <pubDate>Sun, 08 Dec 2024 22:54:54 -0600</pubDate><author>&amp;#105;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#64;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#46;&amp;#109;&amp;#120; (Iván Chavero)</author>
+      <guid>http://192.168.1.178:1313/posts/local-whisper-amd/</guid>
       <description>Quick tutorial for text to speech using a local whisper instance</description>
     </item>
     <item>
       <title>Tutorial de Rocket</title>
-      <link>https://ivan.chavero.com.mx/posts/rocket-tutorial/</link>
-      <pubDate>Tue, 03 Dec 2024 23:34:12 -0600</pubDate><author>ichavero@chavero.com.mx (Iván Chavero)</author>
-      <guid>https://ivan.chavero.com.mx/posts/rocket-tutorial/</guid>
-      <description>Tutorial de Rocket Introducción Instalación de dependencias $ sudo dnf install -y libpq rust cargo make $ cargo install diesel_cli diesel_cli_ext https://github.com/imcsk8/examples&#xA;https://github.com/SotolitoLabs/TourMasters&#xA;Creación de proyecto $ cargo new posadev $ cd posadev $ cargo run Creación de Makefile El make nos sirve para llevar el control de los elementos que hemos compilado y para tener un flujo de trabajo para la compilación de la aplicación.&#xA;# Posadev run: cargo run clean: cargo clean Probamos ejecución</description>
+      <link>http://192.168.1.178:1313/posts/rocket-tutorial/</link>
+      <pubDate>Tue, 03 Dec 2024 23:34:12 -0600</pubDate><author>&amp;#105;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#64;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#46;&amp;#109;&amp;#120; (Iván Chavero)</author>
+      <guid>http://192.168.1.178:1313/posts/rocket-tutorial/</guid>
+      <description>Tutorial rápido para aprender a usar Rocket, un framework para crear aplicaciones web en Rust</description>
     </item>
   </channel>
 </rss>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
 
-<head>
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <title>
 Tutorial de Rocket | Iván Chavero
 </title>
@@ -10,10 +10,10 @@ Tutorial de Rocket | Iván Chavero
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="">
 
-<meta name="generator" content="Hugo 0.142.0">
+<meta name="generator" content="Hugo 0.159.0">
 
 
-<link rel="canonical" href="https://ivan.chavero.com.mx/posts/rocket-tutorial/" >
+<link rel="canonical" href="http://192.168.1.178:1313/posts/rocket-tutorial/" >
 
 
 
@@ -31,7 +31,7 @@ Tutorial de Rocket | Iván Chavero
         <header class="headerWrapper">
     <div class="header">
         <div>
-            <a class="terminal" href="https://ivan.chavero.com.mx/">
+            <a class="terminal" href="http://192.168.1.178:1313/">
                 <span>imcsk8@ivan.chavero.com.mx ~ $</span>
             </a>
         </div>
@@ -41,7 +41,7 @@ Tutorial de Rocket | Iván Chavero
             <ul>
                 
                 <li>
-                    <a href="https://ivan.chavero.com.mx/posts" title="" >
+                    <a href="http://192.168.1.178:1313/posts" title="" >
                         ~/posts</a>
                 </li>
                 
@@ -79,7 +79,7 @@ Tutorial de Rocket | Iván Chavero
         <h1 id="tutorial-de-rocket">Tutorial de Rocket</h1>
 <h2 id="introducción">Introducción</h2>
 <h2 id="instalación-de-dependencias">Instalación de dependencias</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo dnf install -y libpq rust cargo make
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo dnf install -y libpq rust cargo make
 </span></span><span style="display:flex;"><span>$ cargo install diesel_cli diesel_cli_ext
 </span></span></code></pre></div><ul>
 <li>
@@ -90,13 +90,13 @@ Tutorial de Rocket | Iván Chavero
 </li>
 </ul>
 <h2 id="creación-de-proyecto">Creación de proyecto</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cargo new posadev
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cargo new posadev
 </span></span><span style="display:flex;"><span>$ cd posadev
 </span></span><span style="display:flex;"><span>$ cargo run
 </span></span></code></pre></div><h2 id="creación-de-makefile">Creación de Makefile</h2>
 <p>El <code>make</code> nos sirve para llevar el control de los elementos que hemos compilado y
 para tener un flujo de trabajo para la compilación de la aplicación.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Posadev</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Posadev</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>run:
 </span></span><span style="display:flex;"><span>	cargo run
@@ -104,12 +104,12 @@ para tener un flujo de trabajo para la compilación de la aplicación.</p>
 </span></span><span style="display:flex;"><span>clean:
 </span></span><span style="display:flex;"><span>	cargo clean
 </span></span></code></pre></div><p>Probamos ejecución</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ make clean
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ make clean
 </span></span><span style="display:flex;"><span>$ make run
 </span></span></code></pre></div><h2 id="adición-de-dependencias">Adición de dependencias</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cargo add diesel rocket dotenvy serde uuid jsonwebtoken lazy_static
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cargo add diesel rocket dotenvy serde uuid jsonwebtoken lazy_static
 </span></span></code></pre></div><p>Agregamos las siguientes dependecias a <code>Cargo.toml</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dependencies.rocket_dyn_templates<span style="color:#f92672">]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#f92672">[</span>dependencies.rocket_dyn_templates<span style="color:#f92672">]</span>
 </span></span><span style="display:flex;"><span>version <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;0.2.0&#34;</span>
 </span></span><span style="display:flex;"><span>features <span style="color:#f92672">=</span> <span style="color:#f92672">[</span><span style="color:#e6db74">&#34;handlebars&#34;</span><span style="color:#f92672">]</span>
 </span></span><span style="display:flex;"><span>
@@ -121,7 +121,7 @@ para tener un flujo de trabajo para la compilación de la aplicación.</p>
 <ul>
 <li>Agregamos dependencias de rocket</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">extern</span> <span style="color:#66d9ef">crate</span> rocket;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">extern</span> <span style="color:#66d9ef">crate</span> rocket;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> rocket::fs::FileServer;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> rocket::response::Debug;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">use</span> rocket::{launch, routes};
@@ -137,17 +137,17 @@ Aquí vemos una de las características mas importantes de Rocket: la generació
 Las macros de Rust nos permiten ahorrarnos mucho código <strong>boilerplate</strong> y condensarlo
 en &ldquo;decoradores&rdquo; que le agregan código a las funciones en base a su contenido.</p>
 <p>La macro <code>routes!</code> genera el códig necesario para la creación de rutas.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">#[launch]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#75715e">#[launch]</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">rocket</span>() -&gt; <span style="color:#a6e22e">_</span> {
 </span></span><span style="display:flex;"><span>    rocket::build()
-</span></span><span style="display:flex;"><span>        .mount(<span style="color:#e6db74">&#34;/&#34;</span>, routes![hello])
+</span></span><span style="display:flex;"><span>        .mount(<span style="color:#e6db74">&#34;/&#34;</span>, <span style="color:#a6e22e">routes!</span>[hello])
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><p>La función <code>build()</code> nos crea el servidor y la función <code>mount(...)</code> agrega rutas para
 ser servidas hacia los clientes.</p>
 <h3 id="agregamos-función-hello">Agregamos función <code>hello</code></h3>
 <p>En <code>main.rs</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#e6db74">/// Just says hi
-</span></span></span><span style="display:flex;"><span><span style="color:#e6db74"></span><span style="color:#75715e">#[get(</span><span style="color:#e6db74">&#34;/&#34;</span><span style="color:#75715e">)]</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#e6db74">/// Just says hi
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#[get(</span><span style="color:#e6db74">&#34;/&#34;</span><span style="color:#75715e">)]</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">async</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">hello</span>() -&gt; String {
 </span></span><span style="display:flex;"><span>	String::from(<span style="color:#e6db74">&#34;Hola posadev!&#34;</span>)
 </span></span><span style="display:flex;"><span>}
@@ -167,14 +167,14 @@ de la base datos desde la perspectiva de <em>PostgreSQL</em> para tenerlos mas o
 <p>En la raíz del proyecto, agregamos <code>~/.cargo/bin/</code> a nuestra variable de
 ambiente <code>PATH</code> para poder ejecutar las herramientas de <strong>CLI</strong> de
 <em>Diesel</em>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ export PATH<span style="color:#f92672">=</span>$PATH:~/.cargo/bin
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ export PATH<span style="color:#f92672">=</span>$PATH:~/.cargo/bin
 </span></span></code></pre></div><p>Creamos el directorio donde se van a almacenar nuestras migraciones</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ mkdir migrations
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ mkdir migrations
 </span></span></code></pre></div><h4 id="creamos-migraciones-de-nuestras-tablas">Creamos migraciones de nuestras tablas.</h4>
 <ul>
 <li><strong>Eventos</strong></li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ diesel migration create events
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ diesel migration create events
 </span></span><span style="display:flex;"><span>Creating migrations/2024-12-05-234041_events/up.sql
 </span></span><span style="display:flex;"><span>Creating migrations/2024-12-05-234041_events/down.sql
 </span></span></code></pre></div><p>Este comando nos crea el directorio a la migración correspondiente y dos archivos:
@@ -182,8 +182,8 @@ ambiente <code>PATH</code> para poder ejecutar las herramientas de <strong>CLI</
 creamos en <code>up.sql</code>. En estos archivos se escribe el código <em>SQL</em> tal y como se le
 escribiría al motor de base de datos.</p>
 <p>Agregamos la definición de la tabla <code>events</code> a nuestro archivo <code>up.sql</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#75715e">-- Events
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">IF</span> <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">EXISTS</span> Event (
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-sql" data-lang="sql"><span style="display:flex;"><span><span style="color:#75715e">-- Events
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">CREATE</span> <span style="color:#66d9ef">TABLE</span> <span style="color:#66d9ef">IF</span> <span style="color:#66d9ef">NOT</span> <span style="color:#66d9ef">EXISTS</span> Event (
 </span></span><span style="display:flex;"><span>    Id UUID,
 </span></span><span style="display:flex;"><span>    Name TEXT,
 </span></span><span style="display:flex;"><span>    Venue TEXT,
@@ -198,7 +198,7 @@ escribiría al motor de base de datos.</p>
 <p>Para evitar configurar localmente nuestra base de datos podemos usar un contenedor
 de <em>PostgreSQL</em>, agregamos su ejecución a nuestro <em>Makefile</em>:</p>
 <p>Agregamos los targets</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>.env:
 </span></span><span style="display:flex;"><span>	echo <span style="color:#e6db74">&#34;DATABASE_URL=postgres://postgres:prueba123@127.0.0.1:9432/postgres&#34;</span> &gt; .env
 </span></span><span style="display:flex;"><span>
@@ -212,13 +212,13 @@ de <em>PostgreSQL</em>, agregamos su ejecución a nuestro <em>Makefile</em>:</p>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>db: data
 </span></span><span style="display:flex;"><span>	podman run -d --replace --name<span style="color:#f92672">=</span>posadev_pg                    <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>		-e POSTGRES_PASSWORD<span style="color:#f92672">=</span>prueba123                           <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>		-v ./data:/var/lib/postgresql/data:U,Z                   <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>		-p 127.0.0.1:9432:5432 ghcr.io/enterprisedb/postgresql:16
+</span></span></span><span style="display:flex;"><span>		-e POSTGRES_PASSWORD<span style="color:#f92672">=</span>prueba123                           <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>		-v ./data:/var/lib/postgresql/data:U,Z                   <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>		-p 127.0.0.1:9432:5432 ghcr.io/enterprisedb/postgresql:16
 </span></span></code></pre></div><p>Incluímos también los targets para crear los directorios de datos, estático y el archivo
 <code>.env</code> que contiene las credenciales del usuario que se conecta a la base de datos.</p>
 <p>El <code>Makefile</code> completo es de la siguiente manera:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Posadev</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Posadev</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>.env:
 </span></span><span style="display:flex;"><span>	echo <span style="color:#e6db74">&#34;DATABASE_URL=postgres://postgres:prueba123@127.0.0.1:9432/postgres&#34;</span> &gt; .env
@@ -233,9 +233,9 @@ de <em>PostgreSQL</em>, agregamos su ejecución a nuestro <em>Makefile</em>:</p>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>db: data
 </span></span><span style="display:flex;"><span>	podman run -d --replace --name<span style="color:#f92672">=</span>posadev_pg                    <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>		-e POSTGRES_PASSWORD<span style="color:#f92672">=</span>prueba123                           <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>		-v ./data:/var/lib/postgresql/data:U,Z                   <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>		-p 127.0.0.1:9432:5432 ghcr.io/enterprisedb/postgresql:16
+</span></span></span><span style="display:flex;"><span>		-e POSTGRES_PASSWORD<span style="color:#f92672">=</span>prueba123                           <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>		-v ./data:/var/lib/postgresql/data:U,Z                   <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>		-p 127.0.0.1:9432:5432 ghcr.io/enterprisedb/postgresql:16
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>run: dirs db
 </span></span><span style="display:flex;"><span>	cargo run
@@ -245,11 +245,11 @@ de <em>PostgreSQL</em>, agregamos su ejecución a nuestro <em>Makefile</em>:</p>
 </span></span></code></pre></div><ul>
 <li>Levantamos el servidor de base de datos:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ make db
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ make db
 </span></span></code></pre></div><ul>
 <li>Nos conectamos para confirmar que funciona correctamente:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ source .env
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ source .env
 </span></span><span style="display:flex;"><span>$ psql $DATABASE_URL
 </span></span><span style="display:flex;"><span>psql <span style="color:#f92672">(</span>16.3, servidor 16.4<span style="color:#f92672">)</span>
 </span></span><span style="display:flex;"><span>Digite «help» para obtener ayuda.
@@ -258,11 +258,11 @@ de <em>PostgreSQL</em>, agregamos su ejecución a nuestro <em>Makefile</em>:</p>
 </span></span></code></pre></div><ul>
 <li>Ejecutamos las migraciones:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ diesel migration run
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ diesel migration run
 </span></span></code></pre></div><ul>
 <li>Confirmamos que la migración se ejecutó correctamente:</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ source .env
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ source .env
 </span></span><span style="display:flex;"><span>$ psql $DATABASE_URL
 </span></span><span style="display:flex;"><span>postgres<span style="color:#f92672">=</span><span style="color:#75715e"># \d</span>
 </span></span><span style="display:flex;"><span>                  Listado de relaciones
@@ -286,17 +286,17 @@ de <em>PostgreSQL</em>, agregamos su ejecución a nuestro <em>Makefile</em>:</p>
 </span></span><span style="display:flex;"><span>Índices:
 </span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;event_pkey&#34;</span> PRIMARY KEY, btree <span style="color:#f92672">(</span>id<span style="color:#f92672">)</span>
 </span></span></code></pre></div><p>Diesel necesita un archvivo llamado <code>schemas.rs</code> que contiene referencias para traducir de <em>Rust</em> a <em>PostgreSQL</em>. Lo generamos con el comando <code>diesel print-schema</code>:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ diesel print-schema &gt; src/schema.rs
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ diesel print-schema &gt; src/schema.rs
 </span></span></code></pre></div><p>Finalmente generamos el archivo <code>src/models.rs</code> que es el que tiene las estructuras que usamos
 dentro de nuestros módulos:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>diesel_ext -t -s src/schema.rs -m <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -I <span style="color:#e6db74">&#34;crate::schema::*&#34;</span>           <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -I <span style="color:#e6db74">&#34;rocket::serde::{ Deserialize, Serialize }&#34;</span>       <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -d <span style="color:#e6db74">&#34;Clone, Debug, Identifiable, Queryable, QueryableByName, Insertable, Serialize, Deserialize&#34;</span> &gt; src/models.rs
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>diesel_ext -t -s src/schema.rs -m <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  -I <span style="color:#e6db74">&#34;crate::schema::*&#34;</span>           <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  -I <span style="color:#e6db74">&#34;rocket::serde::{ Deserialize, Serialize }&#34;</span>       <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  -d <span style="color:#e6db74">&#34;Clone, Debug, Identifiable, Queryable, QueryableByName, Insertable, Serialize, Deserialize&#34;</span> &gt; src/models.rs
 </span></span></code></pre></div><p>Para realizar todo este merequetengue creamos un archivo llamado <code>generate_models.sh</code> en la raíz
 del proyecto:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">#!/bin/bash
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>DERIVE_FLAGS<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Clone, Debug, Identifiable, Queryable, QueryableByName, Insertable, Serialize, Deserialize&#34;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Running diesel migrations&#34;</span>
@@ -307,12 +307,12 @@ del proyecto:</p>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>echo <span style="color:#e6db74">&#34;Generating models&#34;</span>
 </span></span><span style="display:flex;"><span>diesel_ext -t -s src/schema.rs -m <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -I <span style="color:#e6db74">&#34;crate::schema::*&#34;</span>           <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -I <span style="color:#e6db74">&#34;rocket::serde::{ Deserialize, Serialize }&#34;</span>       <span style="color:#ae81ff">\
-</span></span></span><span style="display:flex;"><span><span style="color:#ae81ff"></span>  -d <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>DERIVE_FLAGS<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> &gt; src/models.rs
+</span></span></span><span style="display:flex;"><span>  -I <span style="color:#e6db74">&#34;crate::schema::*&#34;</span>           <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  -I <span style="color:#e6db74">&#34;rocket::serde::{ Deserialize, Serialize }&#34;</span>       <span style="color:#ae81ff">\
+</span></span></span><span style="display:flex;"><span>  -d <span style="color:#e6db74">&#34;</span><span style="color:#e6db74">${</span>DERIVE_FLAGS<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span> &gt; src/models.rs
 </span></span></code></pre></div><p>Este script se debe ejecutar cada vez que ejecutamos migraciones.</p>
 <p>Creamos el módulo <code>src/db.rs</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>use rocket_sync_db_pools::database;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>use rocket_sync_db_pools::database;
 </span></span><span style="display:flex;"><span>use rocket_sync_db_pools::diesel;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#[database(&#34;postgres&#34;)]</span>
@@ -320,19 +320,19 @@ del proyecto:</p>
 </span></span></code></pre></div><ul>
 <li>Configuramos la base de datos en <code>Rocket.toml</code></li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># TEST VALUES, set the proper values here</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># TEST VALUES, set the proper values here</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>global.databases.postgres<span style="color:#f92672">]</span>
 </span></span><span style="display:flex;"><span>url <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;postgres://postgres:prueba123@127.0.0.1:9432/postgres&#34;</span>
 </span></span><span style="display:flex;"><span>timeout <span style="color:#f92672">=</span> <span style="color:#ae81ff">5</span>
 </span></span><span style="display:flex;"><span>pool_size <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
 </span></span></code></pre></div><h2 id="creamos-los-endpoints-para-agregar-y-consultar-eventos">Creamos los endpoints para agregar y consultar eventos.</h2>
 <h3 id="creación-de-eventos">Creación de eventos:</h3>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"></code></pre></div><h2 id="request-guards">Request Guards</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"></code></pre></div><h2 id="request-guards">Request Guards</h2>
 <p>Se implementa el trait <code>FromRequest</code> el cual es ejecutado por <code>rocket</code>.
 Si este trait está implementado para una argumento de una función, se
 ejecuta la función <code>from_request</code>.</p>
 <p>Revisar <code>claims.rs</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>//Rocket request guard
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>//Rocket request guard
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#[rocket::async_trait]</span>
 </span></span><span style="display:flex;"><span>impl&lt;<span style="color:#e6db74">&#39;r&gt; FromRequest&lt;&#39;</span>r&gt; <span style="color:#66d9ef">for</span> Claims <span style="color:#f92672">{</span>
 </span></span><span style="display:flex;"><span>    type Error <span style="color:#f92672">=</span> AuthenticationError;
@@ -347,7 +347,7 @@ ejecuta la función <code>from_request</code>.</p>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><h2 id="pruebas">Pruebas</h2>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"></code></pre></div>
     </div>
 </div>
 
@@ -358,7 +358,7 @@ ejecuta la función <code>from_request</code>.</p>
         <footer class="footer">
     
         <span>
-            © 2025 Iván Chavero, Built with
+            © 2026 Iván Chavero, Built with
             <a href="https://gohugo.io" class="footerLink">Hugo</a> and
             <a href="https://github.com/LordMathis/hugo-theme-nightfall" class="footerLink">Nightfall</a> theme
         </span>

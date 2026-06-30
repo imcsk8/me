@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Iván Chavero :: Computer Tamer</title>
-    <link>https://ivan.chavero.com.mx/categories/</link>
+    <link>http://192.168.1.178:1313/categories/</link>
     <description>Recent content in Categories on Iván Chavero :: Computer Tamer</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <managingEditor>ichavero@chavero.com.mx (Iván Chavero)</managingEditor>
-    <webMaster>ichavero@chavero.com.mx (Iván Chavero)</webMaster>
-    <atom:link href="https://ivan.chavero.com.mx/categories/index.xml" rel="self" type="application/rss+xml" />
+    <managingEditor>&amp;#105;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#64;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#46;&amp;#109;&amp;#120; (Iván Chavero)</managingEditor>
+    <webMaster>&amp;#105;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#64;&amp;#99;&amp;#104;&amp;#97;&amp;#118;&amp;#101;&amp;#114;&amp;#111;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#46;&amp;#109;&amp;#120; (Iván Chavero)</webMaster>
+    <atom:link href="http://192.168.1.178:1313/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

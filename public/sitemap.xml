@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://ivan.chavero.com.mx/posts/cosmic-desktop/</loc>
-    <lastmod>2025-07-08T14:18:44-06:00</lastmod>
-  </url><url>
     <loc>https://ivan.chavero.com.mx/</loc>
-    <lastmod>2025-07-08T14:18:44-06:00</lastmod>
+    <lastmod>2025-10-19T17:12:58-06:00</lastmod>
+  </url><url>
+    <loc>https://ivan.chavero.com.mx/posts/mssql-database-restore/</loc>
+    <lastmod>2025-10-19T17:12:58-06:00</lastmod>
   </url><url>
     <loc>https://ivan.chavero.com.mx/posts/</loc>
+    <lastmod>2025-10-19T17:12:58-06:00</lastmod>
+  </url><url>
+    <loc>https://ivan.chavero.com.mx/posts/cosmic-desktop/</loc>
     <lastmod>2025-07-08T14:18:44-06:00</lastmod>
   </url><url>
     <loc>https://ivan.chavero.com.mx/posts/local-ai-amd/</loc>

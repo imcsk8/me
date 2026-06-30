@@ -13,7 +13,8 @@ hostname = "ivan.chavero.com.mx"
 
   [params.author]
     name = "Iván Chavero"
-    email = "ichavero@chavero.com.mx"
+    email = "&#105;&#99;&#104;&#97;&#118;&#101;&#114;&#111;&#64;&#99;&#104;&#97;&#118;&#101;&#114;&#111;&#46;&#99;&#111;&#109;&#46;&#109;&#120;"
+#email = "ichavero@chavero.com.mx"
 
 
 [menu]
@@ -45,5 +46,6 @@ url = "https://x.com/imcsk8"
 key = 3
 name = "email"
 url = "mailto:ichavero@chavero.com.mx"
+#url = "mailto:&#105;&#99;&#104;&#97;&#118;&#101;&#114;&#111;&#64;&#99;&#104;&#97;&#118;&#101;&#114;&#111;&#46;&#99;&#111;&#109;&#46;&#109;&#120;"
 
 
